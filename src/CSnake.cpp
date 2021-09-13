@@ -112,6 +112,9 @@ namespace Game{
             if(CUtility::bCompareCoordinates(m_origin, poop)){
                 m_gameStateCb(false);
             }
+            if(CUtility::bCompareCoordinates(poop, foodPos)){
+                m_foodConsumedCb(true);
+            }
         }       
     }
 
